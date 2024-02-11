@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create a Client</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1, h2 {
+            text-align: center;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold; /* Añadido para hacer los títulos de los campos en negrita */
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        hr {
+            border: 1px solid black;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Create a Client</h1>
+    <h2>Please fill in this form to create a client</h2>
+    
+
+    <form action="#" method="post">
+        <hr>
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter Name" required>
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter Email" required>
+        </div>
+        <div>
+            <label for="phone">Phone:</label>
+            <input type="number" id="phone" name="phone" placeholder="Enter Phone" required>
+        </div>
+        <div>
+            <label for="company">Company:</label>
+            <input type="text" id="company" name="company" placeholder="Enter Company" required>
+        </div>
+        
+        <hr>
+        <button type="submit">Register</button>
+    </form>
+</body>
+</html>

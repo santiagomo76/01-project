@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create a Meeting Schedule</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="datetime-local"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+        hr {
+            border: 1px solid black;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Create a Meeting Schedule</h1>
+
+    <form action="#" method="post">
+        <hr>
+        <div>
+            <label for="meeting_topic">Meeting Topic:</label>
+            <input type="text" id="meeting_topic" name="meeting_topic" placeholder="Enter Meeting Topic" required>
+        </div>
+        <div>
+            <label for="">Client Name:</label>
+            <input type="text" id="client_name" name="client_name" placeholder="Enter Client Name" required>
+        </div>
+        <div>
+            <label for="start_time">Start Time:</label>
+            <input type="datetime-local" id="start_time" name="start_time" required>
+        </div>
+        <hr>
+
+        <button type="submit">Create</button>
+    </form>
+</body>
+</html>
