@@ -37,16 +37,22 @@
         }
 
         button {
-            width: 100%;
-            padding: 10px;
-            background-color: #007bff;
-            color: #fff;
-            border: none;
-            cursor: pointer;
+          width: 48%; /* Ajuste para que quepan en una matriz de 2x2 */
+          padding: 10px;
+          margin-bottom: 10px;
+          background-color: #007bff;
+          color: #fff;
+          border: none;
+          cursor: pointer;
         }
 
         button:hover {
             background-color: #0056b3;
+        }
+        .button-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
         }
         hr {
             border: 1px solid black;
@@ -73,7 +79,12 @@
         </div>
         <hr>
 
-        <button type="submit">Create</button>
+        <div class="button-container">
+          <button type="submit">Create</button>
+          <button type="button">Update</button>
+          <button type="button">Delete</button>
+          <button type="button">Show Clients</button>
+        </div>
     </form>
 </body>
 </html>
